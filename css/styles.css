@@ -1,0 +1,186 @@
+/*******************TAG SELECTOR*************************************/
+/* most browsers the default Serif family font is the Times font. And the default San-Serif is Arial.   */
+body {
+  color: #40514E;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  text-align: center; /* centers every child element, as long as the child element does not have a width set. */
+}
+
+h1 {
+  color: #66BFBF;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', ;
+  color: #11999E;
+}
+
+hr {
+  border-style: dotted;
+  border-bottom: none;
+  border-width: 10px;
+  width: 6%;
+  color: #EAF6F6;
+}
+
+P {
+  font-weight:bolder;
+  line-height: 2;
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+}
+
+
+
+/*******************CLASS SELECTOR*************************************/
+/** text-align of a container centers text and image HTML elements inside that container - works only with inline-block images or full with block elements **/
+/** However if the HTML element is a Block display element and its width is set to certain amount (let's say a h1 tag widht set to 10%),
+then text-align will no longer work because the h1 width box expand only 10% of the page **/
+/** In this case you need to use margin: 0 auto 0 auto for the h1 element in css, which centres the Block element horizontally across its Block box
+(within its parent container). Setting to 'margin: 0 auto;' is the same. Meaning top and bottom are 0 margin and left and right set to automatic calculation to automatically
+center the box within its own Block allowed margin within its parent container. So if an element is not a block display, the 'auto' won't work
+to center in an inline the same way it does for a block. Because a Block where the margin spans the entire width of its parent container.
+Inline confined within the size of its box.  **/
+
+.underline {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.profile {
+  height: 180px;
+  width: 180px;
+  margin: auto;
+}
+
+
+.top-container {
+  /*background-color: #E4F9F5; */
+  background-color:#e0ebe8;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.skills-div {
+  width: 50%;
+  margin: 85px auto;
+}
+
+.skill-table {
+  line-height: 2;
+  text-align: left;
+  margin: 0 auto;
+  border-spacing: 20px;
+  font-weight: bolder;
+}
+
+.skill-img {
+  width: 25%;
+}
+
+
+.top-float-cloud {
+  position: absolute;   /* when you set an item to absolute you need to make its parent relative position so that the item will position relative to its parent. Otherwise it will be relative to the body  */
+  right:300px;
+  top: 40px;
+}
+
+.bottom-float-cloud {
+  position: absolute;
+  /*left: 50%;
+  transform:translate(-50%);  How to center absolute position */
+  left: 300px;
+  bottom: 400px;
+}
+
+.btn {
+   background: #66BFBF;
+   background-image: -webkit-linear-gradient(top, #66BFBF, #11999E);
+   background-image: -moz-linear-gradient(top, #66BFBF, #11999E);
+   background-image: -ms-linear-gradient(top, #66BFBF, #11999E);
+   background-image: -o-linear-gradient(top, #66BFBF, #11999E);
+   background-image: linear-gradient(to bottom, #66BFBF, #11999E);
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   height: 10px;
+   line-height: 10px;
+   color: #FFFFFF;
+   font-family: 'Merriweather', serif;
+   width: 150px;
+   font-size: 15px;
+   font-weight: 100;
+   padding: 16px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid #FFFFFF 0px;
+   background: #66BFBF;
+   background-image: -webkit-linear-gradient(top, #66BFBF, #075C5F);
+   background-image: -moz-linear-gradient(top, #66BFBF, #075C5F);
+   background-image: -ms-linear-gradient(top, #66BFBF, #075C5F);
+   background-image: -o-linear-gradient(top, #66BFBF, #075C5F);
+   background-image: linear-gradient(to bottom, #66BFBF, #075C5F);
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   text-decoration: none;
+}
+
+.get-in-touch-p {
+  width: 40%;
+  margin: auto auto 33px;
+}
+
+.get-in-touch {
+  margin: 85px auto 85px;
+}
+
+.bottom-container {
+  padding: 50px 0 20px;
+  background-color: #66BFBF;
+}
+
+.footer-links {
+  margin: 10px 20px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.footer-links a:hover {
+  color: black;
+}
+
+#copy-right {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 10px 0;
+}
